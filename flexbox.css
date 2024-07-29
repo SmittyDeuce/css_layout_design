@@ -1,0 +1,125 @@
+body {
+    background-color:rgb(75, 94, 100);
+
+}
+.header-container {
+    width: 100%;
+    height: auto;
+    background-image: url(photos/images\ \(1\).jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 12px;
+    color: white;
+    letter-spacing: 22px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 20px;
+    padding: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+.article {
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 12px;
+    margin-top: 12px ;
+    text-align: center;
+    color: white;
+}
+
+article p {
+    padding: 12px;
+    transition: ease 0.2s;
+    display: block;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+article p:hover {
+    transform: scale(1.01);
+    background-color: white;
+}
+
+article h3 {
+    background-color:rgb(80, 104, 110);
+    letter-spacing: 9px;
+    
+}
+
+table, table caption,
+tr,td, th {
+    text-align: center;
+    color: white;
+    border: sienna solid 2px;
+    border-collapse: collapse;
+    font-size: 22px;
+}
+
+
+.footer-container {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    border: solid black 1px;
+    justify-content: space-evenly; /* Distribute space evenly between items */
+    align-items: center; /* Center items vertically */
+    border: solid black 1px; /* Border for the footer container */
+    color: white;
+    transition: 0.1 ease;
+}
+
+.footer-container:hover {
+    transform: scale(1.11);
+}
+
+.footer-container a {
+    color: yellow;
+}
+
+.footer-container div {
+    border: solid black 2px;
+    margin: 0 auto;
+    padding: 12px;
+    width: fit-content;
+    height: auto;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.footer-container h3 {
+    text-align: center;
+    font-size: 27px;
+}
