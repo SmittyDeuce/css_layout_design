@@ -1,0 +1,44 @@
+/* Container for the entire page layout */
+.container {
+    display: grid; /* Enables CSS Grid layout */
+    font-size: 18px; /* Sets the font size for text */
+ }
+ 
+ /* Styles for the header's h1 element */
+ header h1 {
+     color: #FF6F00; /* Orange color for the header text */
+     box-shadow: 5px 5px 5px navy; /* Adds a navy box shadow for emphasis */
+ }
+ 
+ /* Center-aligns all headings */
+ h1, h2, h3, h4 {
+     text-align: center; /* Centers the text */
+ }
+ 
+ /* Main content area layout */
+ .main-container {
+     display: grid; /* Enables CSS Grid layout */
+     grid-template-columns: 2fr 1fr; /* Creates two columns: one twice as wide as the other */
+     padding: 15px; /* Adds padding inside the main container */
+     border: solid 12px; /* Adds a solid border with 12px thickness */
+     border-radius: 12px; /* Rounds the corners of the border */
+ }
+ 
+ /* Footer styling */
+ .footer-container {
+     color: #fff; /* White text color for the footer */
+     text-align: center; /* Centers the text in the footer */
+     padding: 10px; /* Adds padding inside the footer */
+     font-size: 14px; /* Sets the font size for text in the footer */
+ }
+ 
+ /* Media query for responsive design on smaller screens */
+ @media screen and (max-width: 768px) {
+     /* Adjusts layout for screens narrower than 768px */
+     .header-container, .main-container, .sidebar,
+     .footer-container {
+         display: grid; /* Enables CSS Grid layout */
+         grid-template-columns: auto; /* Stacks elements vertically by setting one column */
+     }
+ }
+ 

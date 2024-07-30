@@ -1,137 +1,148 @@
+/* General body styling */
 body {
-    background-color:rgb(75, 94, 100);
-
+    background-color: rgb(75, 94, 100); /* Sets the background color of the body */
 }
+
+/* Header container styling */
 .header-container {
-    width: 100%;
-    height: auto;
-    background-image: url(photos/images\ \(1\).jfif);
-    background-size: cover;
-    background-position: center;
+    width: 100%; /* Full width of the viewport */
+    height: auto; /* Auto height based on content */
+    background-image: url(photos/images\(1\).jfif); /* Background image for the header */
+    background-size: cover; /* Cover the entire header with the background image */
+    background-position: center; /* Center the background image */
 }
 
+/* Header text styling */
 header h1 {
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 12px;
-    color: white;
-    letter-spacing: 22px;
-
+    text-align: center; /* Center align the text */
+    font-weight: bold; /* Make the text bold */
+    letter-spacing: 22px; /* Increase spacing between letters */
+    color: white; /* Text color */
 }
 
+/* Container for main content */
 .container {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
 }
 
+/* Navigation styling */
 nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex; /* Flexbox for navigation items */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
+/* Navigation list items */
 nav ul li {
-    margin: 20px;
-    padding: 12px;
+    margin: 20px; /* Space around each list item */
+    padding: 12px; /* Padding inside each list item */
 }
 
+/* Navigation links */
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    font-size: 18px; /* Font size for links */
 }
 
+/* Main content container styling */
 .main-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between items */
 }
 
-
-
+/* Article styling */
 .article {
-    border: 1px solid black;
-    width: fit-content;
-    border-radius: 12px;
-    margin-top: 12px ;
-    text-align: center;
-    color: white;
+    border: 1px solid black; /* Border around the article */
+    width: fit-content; /* Width based on content */
+    border-radius: 12px; /* Rounded corners */
+    margin-top: 12px; /* Space above the article */
+    text-align: center; /* Center text inside the article */
+    color: white; /* Text color */
 }
 
+/* Paragraph styling inside articles */
 article p {
-    padding: 12px;
-    transition: ease 0.2s;
-    display: block;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
+    padding: 12px; /* Padding inside paragraphs */
+    transition: ease 0.2s; /* Smooth transition for hover effect */
+    display: block; /* Display as block element */
+    color: black; /* Text color */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
 }
 
+/* Hover effect for paragraphs inside articles */
 article p:hover {
-    transform: scale(1.01);
-    background-color: white;
+    transform: scale(1.01); /* Slightly enlarge the paragraph on hover */
+    background-color: white; /* Change background color on hover */
 }
 
+/* Heading styling inside articles */
 article h3 {
-    background-color:rgb(80, 104, 110);
-    letter-spacing: 9px;
-    
+    background-color: rgb(80, 104, 110); /* Background color for headings */
+    letter-spacing: 9px; /* Increase spacing between letters */
 }
 
-table, table caption,
-tr,td, th {
-    text-align: center;
-    color: white;
-    border: sienna solid 2px;
-    border-collapse: collapse;
-    font-size: 22px;
+/* Table styling */
+table, table caption, tr, td, th {
+    text-align: center; /* Center text in tables */
+    color: white; /* Text color */
+    border: sienna solid 2px; /* Border around table cells */
+    border-collapse: collapse; /* Collapse table borders */
+    font-size: 22px; /* Font size in tables */
 }
 
-
+/* Footer container styling */
 .footer-container {
-    padding: 12px;
-    display: flex;
-    flex-direction: row;
-    border: solid black 1px;
+    padding: 12px; /* Padding inside the footer */
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    border: solid black 1px; /* Border around the footer */
     justify-content: space-evenly; /* Distribute space evenly between items */
     align-items: center; /* Center items vertically */
-    border: solid black 1px; /* Border for the footer container */
-    color: white;
-    transition: 0.1 ease;
+    color: white; /* Text color */
+    transition: 0.1s ease; /* Smooth transition for hover effect */
 }
 
+/* Hover effect for the footer container */
 .footer-container:hover {
-    transform: scale(1.11);
+    transform: scale(1.11); /* Slightly enlarge the footer on hover */
 }
 
+/* Footer links styling */
 .footer-container a {
-    color: yellow;
+    color: yellow; /* Link color */
 }
 
+/* Styling for divs inside the footer */
 .footer-container div {
-    border: solid black 2px;
-    margin: 0 auto;
-    padding: 12px;
-    width: fit-content;
-    height: auto;
-    flex-direction: row;
-    cursor: pointer;
+    border: solid black 2px; /* Border around footer divs */
+    margin: 0 auto; /* Center divs horizontally */
+    padding: 12px; /* Padding inside divs */
+    width: fit-content; /* Width based on content */
+    height: auto; /* Height based on content */
+    flex-direction: row; /* Arrange items in a row */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Footer headings styling */
 .footer-container h3 {
-    text-align: center;
-    font-size: 27px;
+    text-align: center; /* Center align the heading text */
+    font-size: 27px; /* Font size for headings */
 }
 
+/* Media query for responsive design */
 @media screen and (max-width: 600px) {
     .container nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack navigation items vertically on small screens */
+        align-items: center; /* Center align navigation items */
     }
 
     .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* Stack footer items vertically on small screens */
+        align-items: center; /* Center align footer items */
+        text-align: center; /* Center align text in the footer */
     }
+}
